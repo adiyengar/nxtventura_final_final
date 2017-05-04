@@ -339,7 +339,7 @@ function initmap() {
                         options: {
                             //maxZoom:11,
                             zoom: 17,
-                            mapTypeId: style1,
+                            mapTypeId: google.maps.MapTypeId.ROADMAP,
                             // ('ROADMAP', 'SATELLITE', 'HYBRID','TERRAIN');
                             scrollwheel: false,
                             draggable: false,
@@ -348,7 +348,7 @@ function initmap() {
                                 //mapTypeIds: [google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.HYBRID],
                                 //style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
                                 //position: google.maps.ControlPosition.RIGHT_CENTER
-                                mapTypeIds: [google.maps.MapTypeId.ROADMAP, "style1"]
+                                mapTypeIds: []
                             }
                         }
                         /*events: {
@@ -359,28 +359,6 @@ function initmap() {
                          }
                          }
                          }*/
-                    },
-                    styledmaptype: {
-                        id: "style1",
-                        options: {
-                            name: "Style 1"
-                                 },
-                        styles: [
-                                  {"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},
-                                  {"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},
-                                  {"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},
-                                  {"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},
-                                  {"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},
-                                  {"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},
-                                  {"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},
-                                  {"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},
-                                  {"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},
-                                  {"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},
-                                  {"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},
-                                  {"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},
-                                  {"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}
-                                ],
-    
                     },
                     overlay: {
                         //latLng: [40.616439, -74.035540],
@@ -408,7 +386,7 @@ function initmap() {
                         options: {
                             //maxZoom:11,
                             zoom: 17,
-                            mapTypeId: style1,
+                            mapTypeId: google.maps.MapTypeId.TERRAIN,
                             // ('ROADMAP', 'SATELLITE', 'HYBRID','TERRAIN');
                             scrollwheel: false,
                             draggable: false,
@@ -429,28 +407,28 @@ function initmap() {
                          }
                          }*/
                     },
-					 styledmaptype: {
-                        id: "style1",
-                        options: {
-                            name: "Style 1"
-                                 },
-                            styles: [
-                                      {"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},
-                                      {"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},
-                                      {"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},
-                                      {"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},
-                                      {"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},
-                                      {"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},
-                                      {"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},
-                                      {"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},
-                                      {"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},
-                                      {"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},
-                                      {"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},
-                                      {"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},
-                                      {"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}
-                                    ],
+					 styledmaptype:{
+      id: "style1",
+      options:{
+        name: "Style 1"
+      },
+      styles: [
+          {"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},
+          {"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},
+          {"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},
+          {"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},
+          {"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},
+          {"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},
+          {"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},
+          {"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},
+          {"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},
+          {"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},
+          {"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},
+          {"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},
+          {"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}
+        ],
     
-                    },
+  },
                     overlay: {
                         //latLng: [40.616439, -74.035540],
                         address: location,
@@ -476,12 +454,11 @@ function loadScript() {
     "use strict";
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDhYbCcJCy9iT4Q95qGiVZ65L06VbNWEFQ&callback=initmap';
+    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDbBHZh4vaidthAlXrVtXb0kcaTuauRnWw&callback=initmap';
     document.body.appendChild(script);
 };
 
 window.onload = loadScript;
-
 // End Gmap3 Maps
 
 //Begin Flex Slider

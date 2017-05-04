@@ -7624,7 +7624,7 @@ ol span {
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  min-height: 500px;
+  min-height: 700px;
   color: #ffffff;
   display: table;
   width: 100%;
@@ -8102,7 +8102,7 @@ ol span {
   border: none;
   margin-bottom: 0;
   text-transform: uppercase;
-  background-color: transparent;
+  background-color:  rgba(0, 0, 0, 0.51);
 }
 .navbar-transparent:before {
   position: absolute;
@@ -11159,7 +11159,7 @@ footer .search button {
   }
   .navbar-transparent,
   .navbar-middle {
-    background-color: #ffffff;
+    background-color:  rgba(0, 0, 0, 0.51);
   }
   .navbar-transparent .navbar-header a,
   .navbar-middle .navbar-header a {
@@ -11167,7 +11167,8 @@ footer .search button {
   }
   .navbar-transparent .navbar-header .navbar-toggle,
   .navbar-middle .navbar-header .navbar-toggle {
-    border-color: #333333;
+    border-color: #fefefe;
+	background-color: white;
   }
   .navbar-transparent .navbar-header .navbar-toggle .icon-bar,
   .navbar-middle .navbar-header .navbar-toggle .icon-bar {
